@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+header {
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 3px solid red;
+  background: black;
+}
+
+.umbrella-logo {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.title-box h1 {
+  margin: 0;
+  font-size: 34px;
+  color: red;
+}
+
+.title-box h2 {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: #fff;
+  font-family: "Orbitron", sans-serif;
+}
+
+header {
+  text-align: center;
+
+  border-bottom: 3px solid red;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  color: red;
+}
+
+.sections-menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sections-menu button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sections-menu button:hover {
+  background: #900;
+}
+
+.enemy-section {
+  display: none;
+  padding: 20px;
+}
+
+.enemy-section.active {
+  display: block;
+}
+
+.enemy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.enemy-card {
+  background: #111;
+  border: 2px solid red;
+  padding: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.enemy-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px red;
+}
+
+.enemy-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid red;
+}
+
+.enemy-card h3 {
+  margin: 10px 0 5px;
+  color: red;
+}
+
+/* animação */
+.enemy-section {
+  opacity: 0;
+  transform: translateY(15px);
+  pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.enemy-section.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}

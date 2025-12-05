@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umbrella Corporation – Arquivos Confidenciais</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <link rel="website icon" type="png" href="img/umbrella.webp" />
+
+  <body>
+    <audio
+      id="bg-audio"
+      src="audio/Umbrella Corporation Theme.mpeg"
+      autoplay
+      loop
+    ></audio>
+
+    <header>
+      <img class="umbrella-logo" src="img/umbrella.webp" alt="" />
+
+      <h1>UMBRELLA CORPORATION</h1>
+      <h2>ARQUIVOS CONFIDENCIAIS – RESIDENT EVIL 4</h2>
+    </header>
+
+    <nav class="sections-menu">
+      <button onclick="showSection('vila')">Vila</button>
+      <button onclick="showSection('castelo')">Castelo</button>
+      <button onclick="showSection('ilha')">Ilha</button>
+    </nav>
+
+    <main>
+      <!-- ============================== -->
+      <!-- SEÇÃO: VILA -->
+      <!-- ============================== -->
+      <section id="vila" class="enemy-section active">
+        <h2>Setor: Vila</h2>
+
+        <div class="enemy-grid">
+          <!-- Villagers -->
+          <div class="enemy-card">
+            <img src="img/aldeões.jpg" alt="" />
+            <h3>Villagers (Ganados Rurais)</h3>
+            <p>
+              Habitantes convertidos pela Plaga Tipo-Ω. Apresentam comportamento
+              coletivo, agressividade instantânea e uso de armas agrícolas como
+              ferramentas de ataque. Apesar da baixa inteligência, compensam
+              pelo número e resistência.
+            </p>
+          </div>
+
+          <!-- Dr. Salvador -->
+          <div class="enemy-card">
+            <img src="img/salvador.jpg" alt="" />
+            <h3>Dr. Salvador</h3>
+            <p>
+              Ganado modificado portando uma serra elétrica industrial.
+              Demonstra força anormal, ausência completa de dor e perseguição
+              implacável ao alvo. Exposição prolongada à Plaga intensificou sua
+              crueldade e vigor físico.
+            </p>
+          </div>
+
+          <!-- Bella Sisters -->
+          <div class="enemy-card">
+            <img src="img/bella sisters.jpg" alt="" />
+            <h3>Bellas Sisters</h3>
+            <p>
+              Par de fêmeas infectadas com mutações severas. Atuam em dupla
+              utilizando serras duplas, apresentando coordenação e agressividade
+              elevadas. Resistência superior aos Ganados comuns.
+            </p>
+          </div>
+
+          <!-- El Gigante -->
+          <div class="enemy-card">
+            <img src="img/el gigante.jpg" alt="" />
+            <h3>El Gigante</h3>
+            <p>
+              Mutação colossal resultante de experimentos rudimentares com
+              Plaga. Capaz de destruir estruturas inteiras e resistir a inúmeros
+              calibres. O parasita exposto em suas costas atua como núcleo
+              vital.
+            </p>
+          </div>
+
+          <!-- Mendez -->
+          <div class="enemy-card">
+            <img src="img/bitores.jpg" alt="" />
+            <h3>Bitorez Méndez</h3>
+            <p>
+              Líder da vila e hospedeiro de uma Plaga Alfa. Possui força e
+              regeneração superiores, além de mutações aberrantes em combate
+              avançado. Considerado um dos executores mais letais sob comando de
+              Saddler.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== -->
+      <!-- SEÇÃO: CASTELO -->
+      <!-- ============================== -->
+      <section id="castelo" class="enemy-section">
+        <h2>Setor: Castelo</h2>
+
+        <div class="enemy-grid">
+          <!-- Cultists -->
+          <div class="enemy-card">
+            <img src="img/cultistas.jpg" alt="" />
+            <h3>Cultists (Sectários)</h3>
+            <p>
+              Indivíduos altamente doutrinados e infectados. Utilizam armamentos
+              medievais e modernos com disciplina militar. Fanatismo e lealdade
+              absoluta a Saddler tornam-nos imprevisíveis e perigosos.
+            </p>
+          </div>
+
+          <!-- Garrador -->
+          <div class="enemy-card">
+            <img src="img/garrador.jpg" alt="" />
+            <h3>Garrador</h3>
+            <p>
+              Mutação muscular extrema resultou em cegueira total, compensada
+              com audição e vibração aprimoradas. Possui garras metálicas
+              implantadas e entra em frenesi ao detectar sons próximos.
+            </p>
+          </div>
+
+          <!-- Armaduras -->
+          <div class="enemy-card">
+            <img src="img/aramduras.jpg" alt="" />
+            <h3>Armaduras</h3>
+            <p>
+              Estruturas de metal animadas pela Plaga Tipo-P. Altamente
+              resistentes a danos e capazes de ataques devastadores. O parasita
+              interno precisa ser exposto para neutralização.
+            </p>
+          </div>
+
+          <!-- Verdugo -->
+          <div class="enemy-card">
+            <img src="img/verdugo.jpg" alt="" />
+            <h3>Verdugo</h3>
+            <p>
+              Guarda pessoal de Salazar, produto de engenharia biológica
+              avançada. Possui cauda articulada, garras retráteis e alta
+              velocidade. Resistência térmica incomum dificulta o abate.
+            </p>
+          </div>
+
+          <!-- Salazar -->
+          <div class="enemy-card">
+            <img src="img/salazar.jpg" alt="" />
+            <h3>Ramón Salazar</h3>
+            <p>
+              Herdeiro do castelo e hospedeiro de uma Plaga Suprema. Experimenta
+              mutações extremas, fundindo-se com um organismo parasita em
+              estágio avançado. Pode cuspir ácido e manipular estruturas
+              orgânicas protetoras.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================== -->
+      <!-- SEÇÃO: ILHA -->
+      <!-- ============================== -->
+      <section id="ilha" class="enemy-section">
+        <h2>Setor: Ilha</h2>
+
+        <div class="enemy-grid">
+          <!-- Fighters -->
+          <div class="enemy-card">
+            <img src="img/fighters.jpg" alt="" />
+            <h3>Fighters (Soldados)</h3>
+            <p>
+              Ganados militares com treinamento especializado. Utilizam armas
+              automáticas, escudos balísticos e granadas. A infecção aumenta
+              resistência e agressividade, tornando-os tropas de elite.
+            </p>
+          </div>
+
+          <!-- JJ -->
+          <div class="enemy-card">
+            <img src="img/jj.jpg" alt="" />
+            <h3>J.J.</h3>
+            <p>
+              Colosso armado com metralhadora giratória M134. A Plaga reforça
+              sua musculatura e o torna capaz de manter fogo contínuo
+              devastador. Blindagem corporal elevada.
+            </p>
+          </div>
+
+          <!-- Regenerator -->
+          <div class="enemy-card">
+            <img src="img/regenerator.jpg" alt="" />
+            <h3>Regenerator</h3>
+            <p>
+              Resultado de experimentos avançados com múltiplas Plagas
+              implantadas. Regeneração extrema e flexibilidade antinatural
+              tornam o combate muito difícil. Núcleos parasitários são alvos
+              críticos.
+            </p>
+          </div>
+
+          <!-- Iron Maiden -->
+          <div class="enemy-card">
+            <img src="img/iron maiden.jpg" alt="" />
+            <h3>Iron Maiden</h3>
+            <p>
+              Variante avançada do Regenerator, equipada com espinhos retráteis
+              projetados a distância. Maior resistência, mais parasitas internos
+              e regeneração aprimorada.
+            </p>
+          </div>
+
+          <!-- Krauser -->
+          <div class="enemy-card">
+            <img src="img/krauser.jpg" alt="" />
+            <h3>Jack Krauser</h3>
+            <p>
+              Ex-militar altamente treinado infectado com uma Plaga Suprema.
+              Apresenta transformação parcial com braço mutante armado de
+              lâminas biológicas. Considerado adversário de altíssima
+              letalidade.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
